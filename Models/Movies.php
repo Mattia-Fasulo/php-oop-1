@@ -31,7 +31,7 @@ class Movie {
         if($this->urlStreaming == null){
             $this->avaiable = false;
         }else{
-            $this->avaiable == true;
+            $this->avaiable = true;
         }
     }
     }
