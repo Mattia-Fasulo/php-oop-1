@@ -1,10 +1,17 @@
 <?php
 include __DIR__ . '/Models/Movies.php';
 
-$cast = new Cast("Christian Bale","Cillian Murphy","Michael Caine");
+$castBatman = new Cast("Christian Bale","Cillian Murphy","Michael Caine");
 
-$Batman = new Movie("Batman Begins","Batman Begins", "Christopher Nolan",2005,["azione", "thriller", "drammatico"],$cast);
+$castAvatar = new Cast("Sam Worthington", "Stephen Lang", "Zoe Saldana");
 
-var_dump($Batman);
+$batman = new Movie("Batman Begins","Batman Begins", "Christopher Nolan",2005,["azione", "thriller", "drammatico"],$castBatman);
+
+var_dump($batman);
+
+$avatar = new Movie("Avatar", "Avatar", "James Cameron", 2009, ["fantascienza", "azione", "avventura"], $castAvatar, "https://straming.com");
+
+var_dump($avatar);
+
 
 ?>
